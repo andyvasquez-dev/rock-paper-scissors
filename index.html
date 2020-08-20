@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Pleather, Stone, or Blade</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://kit.fontawesome.com/7aa840a654.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header class="clearfix ">
+		<section class="fist sectionContainer">
+		</section>
+		<section class="paper sectionContainer2">
+		</section>
+		<section class="scissors sectionContainer3">
+		</section>
+			<section class="introContainer">
+				<h1>Rock, Paper, or Scissors?</h1>
+				<p class="caption">A bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.</p>
+				<a id="introButton" href="#game">Play</a>
+			</section>
+	</header>
+
+	<main id="game">
+
+		<h2>Choose Wisely</h2>
+		<section class="buttonContainer">
+
+
+			<button id="rock"><i class="far fa-hand-rock"></i></button>
+
+			<button id="paper"><i class="far fa-hand-paper"></i></button>
+
+			<button id="scissors"><i class="far fa-hand-scissors"></i></button>
+		</section>
+		<section class="scoreboardContainer">
+			<section class="scoreboard">
+				<h2>Scoreboard</h2>
+				<section class="left">
+					<p>You</p>
+					<p id="humanScore">0</p>
+				</section>
+				<section class="right">
+					<p>Bot</p>
+					<p id="computerScore">0</p>
+				</section>
+			</section>
+		</section>
+
+
+
+
+		<p id="status" class="status"></p>
+	</main>
+
+	<script type="text/javascript" src="js/main.js">
+	</script>
+
+</body>
+
+</html>
