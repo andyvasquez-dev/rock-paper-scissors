@@ -18,7 +18,7 @@ function getRandomWeapon(){
 
 function checkWhoWon(botsWeapon,playersWeapon){
 	if(botsWeapon==playersWeapon){
-		displayCompleteMessage("There was tie");
+		displayCompleteMessage("Tie, no winners in sight");
 	}
 	else if(
 		(botsWeapon=="scissors" && playersWeapon=="paper") ||
@@ -39,7 +39,6 @@ document.getElementById("scissors").onclick=playerThrowsScissors;
 function playerThrowsRock(){
 	var botsWeapon=getRandomWeapon();
 	checkWhoWon(botsWeapon,"rock");
-	//console.log("playerThrowsRock");
 }
 
 function playerThrowsScissors(){
@@ -59,7 +58,7 @@ function increaseBotScore(){
 function increasePlayerScore(){
 	playerScore+=1;
 	document.getElementById("humanScore").innerHTML=playerScore;
-	displayCompleteMessage("WINNA WINNA, chicken for DINNAH");
+	displayCompleteMessage("WINNA WINNA WINNA");
 }
 function displayCompleteMessage(msg){
 	document.getElementById("status").innerHTML=msg;
